@@ -1,0 +1,6 @@
+@PokemAPI_HostAddress = http://localhost:5110
+
+GET {{PokemAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
