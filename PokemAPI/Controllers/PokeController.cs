@@ -12,9 +12,9 @@ public class PokemonController : ControllerBase
         _pokeServices = pokeServices;
     }
     [HttpGet("{pokemonname}")]
-    public async Task<ActionResult<Pokemon>> GetResult(string pokemonnombre)
+    public async Task<ActionResult<Pokemon>> GetResult(string pokemonname)
     {
-        var poke = await _pokeServices.GetFavPokemon(pokemonnombre);
+        var poke = await _pokeServices.GetFavPokemon(pokemonname);
         return Ok(poke);
     }
 }
